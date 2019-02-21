@@ -1,0 +1,34 @@
+ 
+ /* Add a gray background color and some padding to the footer */
+ footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+    bottom:0%;
+    position:fixed;
+ 
+  }
+
+  .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    min-height: 300px;
+    max-height: 400px;
+  }
+
+  
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 800px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  .footer {
+      background-color: #C0C0C0;
+  }
+
+  .product_view .modal-dialog{max-width: 800px; width: 100%;}
+  .pre-cost{text-decoration: line-through; color: #a5a5a5;}
+  .space-ten{padding: 10px 0;}
+
+/*comments for search bar*/
+

@@ -1,0 +1,104 @@
+
+<div class="container">
+    
+    <div class="container container-fluid">
+            <div class="row">
+              <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div id="imaginary_container"> 
+                            <div class="input-group stylish-input-group">
+                                <input type="text" class="form-control"  placeholder="Search" >
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>  
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="space-ten"></div>
+              <!-- <p> Home partial </p>   -->
+              <!-- <div class="col-md-3" ng-repeat="p in test_new">
+                    <p> {{p.product_image}} </p>
+                    <img src="{{p.product_image}}" alt="" class="img-responsive">
+              </div> -->
+                              
+                 <div class="col-md-3" ng-repeat="p in test_new">
+                      <div class="thumbnail">
+                        <img src="{{p.product_image}}" alt="" class="img-responsive" >
+                        <div class="caption">
+                          <h4 class="pull-right">{{p.product_price}}</h4>
+                          <h4><a href="#">Product Title</a></h4>
+                          <p>{{p.product_description}}</p>
+                        </div>
+                        <div class="space-ten"></div>
+                        <div class="btn-ground text-center">
+                            <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#product_view" ng-click="name(p)"><i class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="space-ten"></div>
+                      </div>
+                </div> 
+               
+            </div>
+    </div>
+
+    <div class="modal fade product_view" id="product_view">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#" data-dismiss="modal" class="class pull-right"><span class="glyphicon glyphicon-remove"></span></a>
+                    <h3 class="modal-title">Product Description</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 product_img">
+                            <img src="{{kulwisin.product_image}}"  class="img-responsive">
+                        </div>
+                        <div class="col-md-6 product_content">
+                            <h4>Product Id: <span>51526</span></h4>
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                (10 reviews)
+                            </div>
+                            <p>Details about the product</p>
+                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> 75.00 <small class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 60.00</small></h3>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <select class="form-control" name="select">
+                                        <option value="" selected="">Color</option>
+                                        <option value="black">Black</option>
+                                        <option value="white">White</option>
+                                        <option value="gold">Gold</option>
+                                        <option value="rose gold">Rose Gold</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <select class="form-control" name="select">
+                                        <option value="" selected="">Size</option>
+                                        <option value="">small</option>
+                                        <option value="">medium</option>
+                                        <option value="">large</option>
+                                    </select>
+                                </div>
+                              
+                            </div>
+                            <div class="space-ten"></div>
+                            <div class="btn-ground">
+                                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+        
+</div>
+
